@@ -6,7 +6,7 @@ class ProductsController < ApplicationController
 
     def add
         cart << product_params
-        redirect_to :products
+        redirect_to root_path
     end
   
   private
