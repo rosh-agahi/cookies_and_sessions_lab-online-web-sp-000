@@ -1,7 +1,8 @@
-<form action="/add">
-    <input type="text" name="product" id="product">
-    <input type="submit" id="add to cart">
-</form>
+<%= form_tag('/', method: :post) do %>
+   <%= label_tag :product %>
+   <%= text_field_tag :product %>
+   <%= submit_tag "add to cart" %>
+<% end %>
 
 <ul>
     <% session[:cart].each do |product| %>
