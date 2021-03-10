@@ -8,8 +8,7 @@
 <% end %>
 
 <h2>Add to Cart </h2>
-<%= form_tag add_product_path do %>
-  <%= label_tag :product %>
-  <%= text_field_tag :product %>
-  <%= button_tag "add to cart" %>
-<% end %>
+<form action="/add">
+    <input type="text" name="product" id="product">
+    <input type="submit" id="add to cart">
+</form>
