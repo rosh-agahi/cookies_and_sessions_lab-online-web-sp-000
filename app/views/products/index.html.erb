@@ -1,9 +1,13 @@
-<h3>Current contents</h3>
+<h1>Cart</h1>
+
+<h2>Cart Contents</h2>
 <% cart.each do |item| %>
 <p>
   <%= item %>
 </p>
 <% end %>
+
+<h2>Add to Cart </h2>
 <%= form_tag add_product_path do %>
   <%= label_tag :product %>
   <%= text_field_tag :product %>
