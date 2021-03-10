@@ -5,7 +5,7 @@
 <% end %>
 
 <ul>
-    <% session[:cart].each do |product| %>
+    <%= session[:cart].each do |product| %>
         <li><%= product %></li>
     <% end %>
 </ul>
